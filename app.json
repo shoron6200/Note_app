@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Pocketleaf",
+    "slug": "pocketleaf",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.pocketleaf.notes"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FBFAF8",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "allowBackup": true,
+      "package": "app.pocketleaf.notes",
+      "permissions": [
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "name": "Pocketleaf"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-sqlite",
+      "expo-sharing",
+      "@react-native-community/datetimepicker",
+      "expo-notifications"
+    ],
+    "scheme": "pocketleaf",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
